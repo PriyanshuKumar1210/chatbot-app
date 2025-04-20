@@ -1,0 +1,83 @@
+/* App.css */
+.app{
+background-color: red;
+}
+
+/* Position chatbot like a popup */
+.chatbot-popup {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Floating chat button */
+.chatbot-toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-toggle-button:hover {
+  background-color: #0056b3;
+}
+
+/* Chatbox style overrides */
+.chatbot-popup .react-chatbot-kit-chat-container {
+  width: 400px;
+}
+
+/* Optional: Header style */
+.react-chatbot-kit-chat-header {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Bot and user message bubbles */
+.react-chatbot-kit-user-chat-message {
+  background-color: #dcf8c6;
+  color: #000;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 5px;
+  max-width: 80%;
+  align-self: flex-end;
+}
+
+.chatbot-popup .react-chatbot-kit-chat-bot-message {
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin: 5px;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+
+.start-btn{
+  margin-left: 3.2rem;
+  background-color:#2898ec;
+}
+
+.react-chatbot-kit-chat-input{
+  display: none !important;
+}
+
+.react-chatbot-kit-chat-input-form{
+  display: none !important;
+}
